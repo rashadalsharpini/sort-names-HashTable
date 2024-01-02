@@ -23,6 +23,8 @@ public:
     bool operator<=(const student&other)const;
     bool operator>=(const student&other)const;
     bool operator==(const student&other)const;
+    static bool compareByName(const student&obj1,const student&obj2);
+    static bool compareById(const student&obj1,const student&obj2);
 };
 
 

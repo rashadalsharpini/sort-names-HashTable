@@ -68,3 +68,11 @@ bool student::operator>=(const student &other) const {
 bool student::operator==(const student &other) const {
     return this->lastName==other.lastName;
 }
+
+bool student::compareByName(const student &obj1, const student &obj2) {
+    return obj1.firstName<obj2.firstName;
+}
+
+bool student::compareById(const student &obj1, const student &obj2) {
+    return obj1.id<obj2.id;
+}
